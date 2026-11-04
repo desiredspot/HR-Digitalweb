@@ -1,0 +1,7 @@
+{"_id": "category-web-development", "_type": "category", "title": "Web Development", "slug": {"_type": "slug", "current": "web-development"}}
+{"_id": "category-landing-pages", "_type": "category", "title": "Landing Pages", "slug": {"_type": "slug", "current": "landing-pages"}}
+{"_id": "category-gohighlevel", "_type": "category", "title": "GoHighLevel", "slug": {"_type": "slug", "current": "gohighlevel"}}
+{"_id": "category-email-marketing", "_type": "category", "title": "Email Marketing", "slug": {"_type": "slug", "current": "email-marketing"}}
+{"_id": "category-seo-content", "_type": "category", "title": "SEO & Content", "slug": {"_type": "slug", "current": "seo-content"}}
+{"_id": "category-social-media-reels", "_type": "category", "title": "Social Media & Reels", "slug": {"_type": "slug", "current": "social-media-reels"}}
+{"_id": "author-main", "_type": "author", "name": "Your Name", "slug": {"_type": "slug", "current": "your-name"}, "role": "Freelance Web Developer & Digital Marketer", "bio": "I build fast websites, landing pages and marketing systems that bring in leads."}
