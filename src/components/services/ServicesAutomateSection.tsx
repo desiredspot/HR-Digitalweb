@@ -28,7 +28,7 @@ const automateServices: {
     badge: "Leads and workflows",
     desc: "Pipelines, booking calendars, funnels and automatic follow-up, set up for how your business actually sells.",
     linkText: "More about GoHighLevel CRM",
-    href: "/services/gohighlevel-automation",
+    href: "/services/gohighlevel-crm",
     icon: Zap,
     gradient: "from-blue-500 via-indigo-500 to-purple-600",
     tagColor: "border-blue-500/30 bg-blue-500/10 text-blue-700 dark:text-blue-400",

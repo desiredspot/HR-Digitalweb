@@ -53,7 +53,7 @@ function ServicesFilter({ tabs, children }: { tabs: FilterTab[]; children: React
 // - JSON-LD OfferCatalog tells search engines exactly which services you offer.
 
 // TODO: set your real domain and business name
-const SITE_URL = "https://www.example.com";
+const SITE_URL = "https://www.hrdigitalweb.com";
 const BUSINESS_NAME = "HR DigitalWeb";
 
 type Category = "development" | "funnels" | "automation" | "marketing";
@@ -97,7 +97,7 @@ const services: {
     category: "funnels",
     desc: "Conversion-focused landing pages for Google Ads, Meta Ads and product launches.",
     linkText: "Explore landing page design",
-    href: "/services/landing-pages",
+    href: "/services/landing-page-design",
     icon: Layers,
     badge: "High conversion",
     gradient: "from-teal-400 to-emerald-500",
@@ -109,7 +109,7 @@ const services: {
     category: "development",
     desc: "Easy-to-edit WordPress sites, speed optimisation and ongoing maintenance.",
     linkText: "Explore WordPress development",
-    href: "/services/wordpress",
+    href: "/services/wordpress-development",
     icon: Globe,
     badge: "CMS & maintenance",
     gradient: "from-blue-500 to-indigo-600",
@@ -121,7 +121,7 @@ const services: {
     category: "automation",
     desc: "Sales pipelines, booking calendars, funnels and instant lead follow-up.",
     linkText: "Explore GoHighLevel automation",
-    href: "/services/gohighlevel-automation",
+    href: "/services/gohighlevel-crm",
     icon: Zap,
     badge: "Lead automation",
     gradient: "from-indigo-500 to-purple-600",
@@ -145,7 +145,7 @@ const services: {
     category: "marketing",
     desc: "Keyword-researched blog posts and website copy written to rank on Google.",
     linkText: "Explore SEO content writing",
-    href: "/services/seo-content",
+    href: "/services/content-marketing",
     icon: Search,
     badge: "Organic traffic",
     gradient: "from-emerald-400 to-teal-500",
@@ -169,7 +169,7 @@ const services: {
     category: "marketing",
     desc: "30 to 60 second reels with strong hooks and on-screen captions.",
     linkText: "Explore reels and video editing",
-    href: "/services/reels-video",
+    href: "/services/reels-video-editing",
     icon: Video,
     badge: "Engagement",
     gradient: "from-sky-400 to-blue-500",

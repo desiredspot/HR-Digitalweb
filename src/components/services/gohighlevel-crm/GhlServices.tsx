@@ -152,7 +152,7 @@ POST https://services.leadconnectorhq.com/hooks/
      {locationId}/webhook-trigger/{triggerId}
 Content-Type: application/json
 
-{ "email": "lead@example.com", "source": "website" }`,
+{ "email": "lead@hrdigitalweb.com", "source": "website" }`,
   },
   {
     key: "migrations",

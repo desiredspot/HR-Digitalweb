@@ -6,7 +6,7 @@ export const site = {
   name: "HR DigitalWeb",
   person: "HR DigitalWeb",
   tagline: "Freelance web development and digital marketing for businesses that want to grow online.",
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.example.com").replace(/\/$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.hrdigitalweb.com").replace(/\/$/, ""),
   email: "hello@hrdigitalweb.com",
   phone: "+91 00000 00000",
   whatsapp: "910000000000", // digits only, used for wa.me link

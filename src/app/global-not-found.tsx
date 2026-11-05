@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer";
 const display = localFont({ src: "../fonts/bricolage.woff2", variable: "--font-bricolage", weight: "200 800", display: "swap" });
 const body = localFont({ src: "../fonts/figtree.woff2", variable: "--font-figtree", weight: "300 900", display: "swap" });
 
-export const metadata: Metadata = { metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.example.com"), title: "Page not found", robots: { index: false, follow: true } };
+export const metadata: Metadata = { metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.hrdigitalweb.com"), title: "Page not found", robots: { index: false, follow: true } };
 
 export default function GlobalNotFound() {
   return (

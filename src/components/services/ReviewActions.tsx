@@ -21,7 +21,7 @@ export async function requestWebsiteReview(_prev: ReviewState, formData: FormDat
   const fieldErrors: NonNullable<Extract<ReviewState, { status: "error" }>["fieldErrors"]> = {};
   if (name.length < 2) fieldErrors.name = "Enter your name.";
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) fieldErrors.email = "Enter a valid email address.";
-  // Accepts "example.com", "www.example.com" or a full https:// address
+  // Accepts "hrdigitalweb.com", "www.hrdigitalweb.com" or a full https:// address
   if (!/^(https?:\/\/)?([\w-]+\.)+[a-z]{2,}(\/\S*)?$/i.test(website)) {
     fieldErrors.website = "Enter your website address, e.g. yourwebsite.com.";
   }

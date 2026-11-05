@@ -58,11 +58,11 @@ const connectedWay = [
 
 // TODO: point these at your real service pages (or remove href to render plain chips)
 const pillars = [
-  { name: "Next.js & WordPress websites", href: "/services/web-development", icon: Layers, gradient: "from-cyan-500 to-blue-500" },
-  { name: "Unbounce landing pages", href: "/services/landing-pages", icon: Target, gradient: "from-teal-400 to-emerald-500" },
-  { name: "GoHighLevel CRM automation", href: "/services/gohighlevel-automation", icon: Zap, gradient: "from-blue-500 to-indigo-500" },
+  { name: "Next.js & WordPress websites", href: "/services/wordpress-development", icon: Layers, gradient: "from-cyan-500 to-blue-500" },
+  { name: "Unbounce landing pages", href: "/services/landing-page-design", icon: Target, gradient: "from-teal-400 to-emerald-500" },
+  { name: "GoHighLevel CRM automation", href: "/services/gohighlevel-crm", icon: Zap, gradient: "from-blue-500 to-indigo-500" },
   { name: "Email & SMS follow-up", href: "/services/email-marketing", icon: MessageSquare, gradient: "from-indigo-500 to-purple-500" },
-  { name: "SEO content & short reels", href: "/services/seo-content", icon: TrendingUp, gradient: "from-purple-500 to-cyan-400" },
+  { name: "SEO content & short reels", href: "/services/content-marketing", icon: TrendingUp, gradient: "from-purple-500 to-cyan-400" },
 ];
 
 export function OneTeamSection() {
