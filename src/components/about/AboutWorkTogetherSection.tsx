@@ -130,7 +130,7 @@ export function AboutWorkTogetherSection() {
                   <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">{desc}</p>
                 </div>
 
-                <p className="mt-4 flex items-center gap-1.5 border-t border-slate-200 pt-3 text-[11px] font-semibold text-emerald-600 dark:border-slate-800 dark:text-emerald-400">
+                <p className="mt-4 flex items-center gap-1.5 border-t border-slate-200 pt-3 text-[11px] font-semibold text-emerald-700 dark:border-slate-800 dark:text-emerald-400">
                   <CheckCircle2 className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
                   Included in every project
                 </p>

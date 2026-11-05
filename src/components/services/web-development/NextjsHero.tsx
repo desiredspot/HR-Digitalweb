@@ -119,11 +119,12 @@ export function NextjsHero() {
                 </div>
 
                 <pre
+                  tabIndex={0}
                   aria-label="Example Next.js page code"
-                  className="overflow-x-auto p-5 font-mono text-xs leading-relaxed text-slate-300"
+                  className="overflow-x-auto focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-500 p-5 font-mono text-xs leading-relaxed text-slate-300"
                 >
                   <code>
-                    <span className="text-slate-500">{"// Static, SEO-ready pages that refresh every hour\n"}</span>
+                    <span className="text-slate-400">{"// Static, SEO-ready pages that refresh every hour\n"}</span>
                     <span className="text-purple-400">export const</span>
                     {" revalidate = "}
                     <span className="text-amber-300">3600</span>

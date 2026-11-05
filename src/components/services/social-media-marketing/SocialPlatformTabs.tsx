@@ -92,7 +92,7 @@ export function SocialPlatformTabs({ tabs, panels }: { tabs: SocialPlatformTab[]
                 className={`hidden shrink-0 rounded-full px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-wider sm:inline ${
                   isActive
                     ? "border border-cyan-400/40 bg-cyan-400/20 text-cyan-800 dark:text-cyan-300"
-                    : "border border-slate-200 bg-slate-50 text-slate-500 dark:border-slate-800 dark:bg-slate-950"
+                    : "border border-slate-200 bg-slate-50 text-slate-600 dark:border-slate-800 dark:bg-slate-950 dark:text-slate-400"
                 }`}
               >
                 {tab.badge}

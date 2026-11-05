@@ -282,7 +282,7 @@ export function EmailServices() {
                         {s.file}
                       </span>
                     </div>
-                    <pre className="overflow-x-auto p-5 font-mono text-xs leading-relaxed text-slate-300">
+                    <pre tabIndex={0} aria-label="Code example" className="overflow-x-auto focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-500 p-5 font-mono text-xs leading-relaxed text-slate-300">
                       <code>{s.code}</code>
                     </pre>
                     <div className="flex items-center justify-between border-t border-slate-800 bg-slate-900/90 px-4 py-2.5 font-mono text-[11px] text-slate-400">

@@ -159,7 +159,7 @@ export function ServicesBuildSection() {
                   ) : (
                     <span />
                   )}
-                  <span className="flex shrink-0 items-center gap-1 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">
+                  <span className="flex shrink-0 items-center gap-1 text-[11px] font-semibold text-emerald-700 dark:text-emerald-400">
                     <Tag className="h-3 w-3" aria-hidden="true" /> Fixed price
                   </span>
                 </div>

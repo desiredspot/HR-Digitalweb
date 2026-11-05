@@ -117,7 +117,8 @@ export function TestimonialsSection() {
                   {(item.rating || item.resultHighlight) && (
                     <div className="mb-6 flex items-center justify-between gap-2">
                       {item.rating ? (
-                        <p className="flex items-center gap-1" aria-label={`Rated ${item.rating} out of 5`}>
+                        <p className="flex items-center gap-1">
+                        <span className="sr-only">Rated {item.rating} out of 5</span>
                           {Array.from({ length: item.rating }, (_, i) => (
                             <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" aria-hidden="true" />
                           ))}

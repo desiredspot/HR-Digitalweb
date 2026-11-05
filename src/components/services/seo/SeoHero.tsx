@@ -177,11 +177,11 @@ export function SeoHero() {
 
             {/* Example of a well-optimised local listing */}
             <figure className="mt-6 space-y-1.5 rounded-2xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-950">
-              <figcaption className="font-mono text-[10px] font-bold uppercase tracking-widest text-slate-500">
+              <figcaption className="font-mono text-[10px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">
                 Example search result
               </figcaption>
               <p className="flex items-center gap-2 font-mono text-xs text-slate-500 dark:text-slate-400">
-                <Globe className="h-3.5 w-3.5 shrink-0 text-emerald-600 dark:text-emerald-400" aria-hidden="true" />
+                <Globe className="h-3.5 w-3.5 shrink-0 text-emerald-700 dark:text-emerald-400" aria-hidden="true" />
                 <span className="truncate">yourbusiness.com › services › boiler-repair</span>
               </p>
               <p className="text-sm font-bold text-blue-700 sm:text-base dark:text-cyan-400">

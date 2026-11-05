@@ -1,36 +1,42 @@
 import Image from "next/image";
 
-// 1. Put your logo file in /public, e.g. public/logo.png (or .svg / .webp)
-// 2. Set LOGO_WIDTH / LOGO_HEIGHT to the file's real pixel size (keeps the ratio, no layout shift)
-// 3. If your logo is hard to see on the light theme, add a second file
-//    (e.g. public/logo-dark-text.png) and set LIGHT_THEME_SRC to it.
+// Header logo. Two files: a dark-text version for light mode and a white version for dark mode.
+// Each <Image> gets the size it is SHOWN at (80px tall), so Next.js creates small copies
+// (about 170px and 340px wide for sharp screens) instead of 1200px ones.
+// loading="eager" + fetchPriority="high": the logo is the first thing on every page,
+// so the browser fetches it straight away (better LCP).
+//
+// If you change the logo files, update the widths below:
+// width = round(80 × file width ÷ file height)
 
-const LOGO_SRC = "/logo-1.png"; // shown in dark mode (and in light mode if no variant)
-const LIGHT_THEME_SRC: "/logo-w.png" = "/logo-w.png"; // e.g. "/logo-dark-text.png"
-const LOGO_WIDTH = 600;
-const LOGO_HEIGHT = 200;
+const LIGHT_THEME = { src: "/logo-w.png", width: 172, height: 80 }; // file is 621 × 289
+const DARK_THEME = { src: "/logo-1.png", width: 143, height: 80 }; //  file is 328 × 183
 
 const ALT = "HR DigitalWeb logo";
 
 export function Logo({ className = "" }: { className?: string }) {
-  const imgClass = "h-20 w-auto"; // display height in the header – adjust to taste
-
-  if (!LIGHT_THEME_SRC) {
-    return (
-      <Image
-        src={LOGO_SRC}
-        alt={ALT}
-        width={LOGO_WIDTH}
-        height={LOGO_HEIGHT}
-        className={`${imgClass} ${className}`}
-      />
-    );
-  }
+  const imgClass = "h-20 w-auto"; // 80px tall in the header
 
   return (
     <span className={className}>
-      <Image src={LIGHT_THEME_SRC} alt={ALT} width={LOGO_WIDTH} height={LOGO_HEIGHT} className={`${imgClass} dark:hidden`} />
-      <Image src={LOGO_SRC} alt={ALT} width={LOGO_WIDTH} height={LOGO_HEIGHT} className={`${imgClass} hidden dark:block`} />
+      <Image
+        src={LIGHT_THEME.src}
+        alt={ALT}
+        width={LIGHT_THEME.width}
+        height={LIGHT_THEME.height}
+        loading="eager"
+        fetchPriority="high"
+        className={`${imgClass} dark:hidden`}
+      />
+      <Image
+        src={DARK_THEME.src}
+        alt={ALT}
+        width={DARK_THEME.width}
+        height={DARK_THEME.height}
+        loading="eager"
+        fetchPriority="high"
+        className={`${imgClass} hidden dark:block`}
+      />
     </span>
   );
 }

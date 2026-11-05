@@ -40,7 +40,7 @@ function Price({ tier, className }: { tier: PriceTier; className?: string }) {
   if (isCustom) return <span className={className}>Custom quote</span>;
   return (
     <span className={className}>
-      <span className="text-xs font-semibold opacity-70">From </span>
+      <span className="text-xs font-semibold">From </span>
       <span data-cur="usd">{tier.usd}</span>
       <span data-cur="inr">{tier.inr}</span>
     </span>

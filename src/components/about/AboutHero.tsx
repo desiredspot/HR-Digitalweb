@@ -13,9 +13,9 @@ const FOUNDER_PHOTO = ""; // e.g. "/about/founder.jpg"
 // ─────────────────────────────────────────────────────────────────────────────
 
 const outcomes = [
-  { title: "Inbound leads", desc: "Forms built to convert", icon: Inbox, color: "text-cyan-600 dark:text-cyan-400" },
-  { title: "Direct bookings", desc: "Calendars synced to your CRM", icon: CalendarCheck, color: "text-teal-600 dark:text-teal-400" },
-  { title: "Predictable sales", desc: "Automated CRM pipelines", icon: TrendingUp, color: "text-blue-600 dark:text-blue-400" },
+  { title: "Inbound leads", desc: "Forms built to convert", icon: Inbox, color: "text-cyan-700 dark:text-cyan-400" },
+  { title: "Direct bookings", desc: "Calendars synced to your CRM", icon: CalendarCheck, color: "text-teal-700 dark:text-teal-400" },
+  { title: "Predictable sales", desc: "Automated CRM pipelines", icon: TrendingUp, color: "text-blue-700 dark:text-blue-400" },
 ];
 
 // Person + AboutPage structured data: helps Google connect you to your business.
@@ -199,7 +199,7 @@ function AboutLogo() {
             DigitalWeb
           </span>
         </span>
-        <span className="mt-0.5 text-[9px] font-medium uppercase tracking-[0.25em] text-cyan-600 dark:text-cyan-400/80">
+        <span className="mt-0.5 text-[9px] font-medium uppercase tracking-[0.25em] text-cyan-700 dark:text-cyan-400/80">
           Growth &amp; Development
         </span>
       </span>

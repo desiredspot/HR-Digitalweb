@@ -245,12 +245,12 @@ export function WordPressSeoSection() {
 
                   {/* Example of how a page can look in Google */}
                   <figure className="space-y-2 rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-800 dark:bg-slate-950">
-                    <figcaption className="font-mono text-[10px] font-bold uppercase tracking-widest text-slate-500">
+                    <figcaption className="font-mono text-[10px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">
                       Example search result
                     </figcaption>
                     <div className="space-y-1">
                       <p className="flex items-center gap-2 font-mono text-xs text-slate-500 dark:text-slate-400">
-                        <Globe className="h-3.5 w-3.5 shrink-0 text-emerald-600 dark:text-emerald-400" aria-hidden="true" />
+                        <Globe className="h-3.5 w-3.5 shrink-0 text-emerald-700 dark:text-emerald-400" aria-hidden="true" />
                         <span className="truncate">brightside.example › {f.serp.path}</span>
                       </p>
                       <p className="text-sm font-bold text-blue-700 sm:text-base dark:text-cyan-400">{f.serp.title}</p>
@@ -278,7 +278,7 @@ export function WordPressSeoSection() {
                         {f.file}
                       </span>
                     </div>
-                    <pre className="overflow-x-auto p-5 font-mono text-xs leading-relaxed text-slate-300">
+                    <pre tabIndex={0} aria-label="Code example" className="overflow-x-auto focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-500 p-5 font-mono text-xs leading-relaxed text-slate-300">
                       <code>{f.code}</code>
                     </pre>
                     <div className="flex items-center justify-between border-t border-slate-800 bg-slate-900/90 px-4 py-2.5 font-mono text-[11px] text-slate-400">

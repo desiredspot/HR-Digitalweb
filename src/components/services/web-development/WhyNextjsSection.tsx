@@ -230,7 +230,7 @@ export function WhyNextjsSection() {
                         Example
                       </span>
                     </div>
-                    <pre className="overflow-x-auto p-5 font-mono text-xs leading-relaxed text-slate-300">
+                    <pre tabIndex={0} aria-label="Code example" className="overflow-x-auto focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-500 p-5 font-mono text-xs leading-relaxed text-slate-300">
                       <code>{p.code}</code>
                     </pre>
                   </div>

@@ -157,7 +157,7 @@ export function EmailPlatforms() {
               </div>
 
               <div className="mt-6 flex items-center justify-between gap-3 border-t border-slate-100 pt-4 font-mono text-[11px] text-slate-500 dark:border-slate-800/60 dark:text-slate-400">
-                <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400">
+                <span className="flex items-center gap-1 text-emerald-700 dark:text-emerald-400">
                   <ShieldCheck className="h-3.5 w-3.5" aria-hidden="true" />
                   Setup and migration
                 </span>

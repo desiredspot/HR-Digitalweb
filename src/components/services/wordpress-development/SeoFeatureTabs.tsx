@@ -73,7 +73,7 @@ export function SeoFeatureTabs({ tabs, panels }: { tabs: SeoTab[]; panels: React
                   className={`rounded-full px-2 py-0.5 font-mono text-[9px] ${
                     isActive
                       ? "border border-cyan-400/40 bg-cyan-400/20 text-cyan-800 dark:text-cyan-300"
-                      : "bg-slate-100 text-slate-500 dark:bg-slate-950"
+                      : "bg-slate-100 text-slate-600 dark:bg-slate-950 dark:text-slate-400"
                   }`}
                 >
                   {tab.badge}

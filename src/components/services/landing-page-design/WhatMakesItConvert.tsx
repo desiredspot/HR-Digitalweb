@@ -136,7 +136,7 @@ export function WhatMakesItConvert() {
                   <span className="rounded-xl border border-slate-200 bg-slate-50 p-2.5 text-slate-500 transition-colors group-hover:text-cyan-600 group-data-[active=true]:border-cyan-300 group-data-[active=true]:bg-cyan-400 group-data-[active=true]:text-slate-950 dark:border-slate-800 dark:bg-slate-950 dark:text-slate-400 dark:group-hover:text-cyan-400">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </span>
-                  <span className="rounded-md bg-slate-100 px-2 py-0.5 font-mono text-[10px] text-slate-500 group-data-[active=true]:border group-data-[active=true]:border-cyan-400/30 group-data-[active=true]:bg-cyan-400/20 group-data-[active=true]:text-cyan-700 dark:bg-slate-950 dark:group-data-[active=true]:text-cyan-300">
+                  <span className="rounded-md bg-slate-100 px-2 py-0.5 font-mono text-[10px] text-slate-600 group-data-[active=true]:border group-data-[active=true]:border-cyan-400/30 group-data-[active=true]:bg-cyan-400/20 group-data-[active=true]:text-cyan-700 dark:bg-slate-950 dark:group-data-[active=true]:text-cyan-300 dark:text-slate-400">
                     {tag}
                   </span>
                 </span>

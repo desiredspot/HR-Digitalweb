@@ -137,7 +137,7 @@ export function ToolsSection() {
                 </div>
 
                 <div className="mt-3 flex items-center justify-between gap-2 border-t border-slate-100 pt-2.5 text-[10px] text-slate-500 dark:border-slate-800/80 dark:text-slate-500">
-                  <span className="flex items-center gap-1 font-semibold text-emerald-600 dark:text-emerald-400">
+                  <span className="flex items-center gap-1 font-semibold text-emerald-700 dark:text-emerald-400">
                     <CheckCircle2 className="h-3 w-3" aria-hidden="true" /> In my stack
                   </span>
                   <span className="truncate text-[9px]">{categoryLabels[tool.category]}</span>

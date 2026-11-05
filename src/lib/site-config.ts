@@ -92,7 +92,7 @@ export const services: ServiceItem[] = [
     title: "Reels & Short-Form Video",
     desc: "Instagram Reels, YouTube Shorts and TikTok edits with strong hooks and captions.",
     icon: Video,
-    tone: "border-rose-500/30 text-rose-600 bg-rose-500/10 dark:text-rose-400",
+    tone: "border-rose-500/30 text-rose-700 bg-rose-500/10 dark:text-rose-400",
   },
 ];
 

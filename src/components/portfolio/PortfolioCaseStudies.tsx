@@ -191,7 +191,7 @@ export function PortfolioCaseStudies() {
                     {/* Challenge and approach */}
                     <div className="space-y-5 rounded-2xl border border-slate-200 bg-slate-50 p-6 text-left sm:p-8 lg:col-span-7 dark:border-slate-800 dark:bg-slate-950/60">
                       <div className="space-y-2">
-                        <h4 className="flex items-center gap-1.5 font-mono text-xs font-bold uppercase tracking-widest text-rose-600 dark:text-rose-400">
+                        <h4 className="flex items-center gap-1.5 font-mono text-xs font-bold uppercase tracking-widest text-rose-700 dark:text-rose-400">
                           <Target className="h-4 w-4" aria-hidden="true" />
                           The challenge
                         </h4>

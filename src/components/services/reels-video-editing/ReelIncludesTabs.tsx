@@ -109,7 +109,7 @@ export function ReelIncludesTabs({ steps, panels }: { steps: ReelIncludesStep[];
                       className={`rounded px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wider ${
                         isActive
                           ? "border border-cyan-500/30 bg-cyan-500/15 text-cyan-800 dark:text-cyan-300"
-                          : "bg-slate-100 text-slate-500 dark:bg-slate-950"
+                          : "bg-slate-100 text-slate-600 dark:bg-slate-950 dark:text-slate-400"
                       }`}
                     >
                       {s.badge}

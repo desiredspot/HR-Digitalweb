@@ -220,7 +220,7 @@ export function SeoIncluded() {
                     {item.file}
                   </span>
                 </div>
-                <pre className="overflow-x-auto p-4 font-mono text-xs leading-relaxed text-slate-300">
+                <pre tabIndex={0} aria-label="Code example" className="overflow-x-auto focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-500 p-4 font-mono text-xs leading-relaxed text-slate-300">
                   <code>{item.code}</code>
                 </pre>
                 <figcaption className="flex items-center justify-between border-t border-slate-800 bg-slate-900/90 px-4 py-2 font-mono text-[10px] text-slate-400">

@@ -71,7 +71,7 @@ export function LegalPage({
                     href={`#${s.id}`}
                     className="flex gap-2 rounded-xl px-3 py-1.5 text-slate-600 transition-colors hover:bg-cyan-50 hover:text-cyan-700 dark:text-slate-400 dark:hover:bg-slate-950 dark:hover:text-cyan-300"
                   >
-                    <span className="font-mono text-xs text-slate-400">{i + 1}.</span>
+                    <span className="font-mono text-xs text-slate-500 dark:text-slate-400">{i + 1}.</span>
                     {s.title}
                   </a>
                 </li>
@@ -83,7 +83,7 @@ export function LegalPage({
             {sections.map((s, i) => (
               <article key={s.id} id={s.id} className="scroll-mt-28 space-y-4">
                 <h2 className="border-b border-slate-200 pb-3 text-xl font-black text-slate-900 sm:text-2xl dark:border-slate-800 dark:text-white">
-                  <span className="mr-2 font-mono text-base text-cyan-600 dark:text-cyan-400">{i + 1}.</span>
+                  <span className="mr-2 font-mono text-base text-cyan-700 dark:text-cyan-400">{i + 1}.</span>
                   {s.title}
                 </h2>
                 <div className="space-y-4 text-[15px] leading-7 text-slate-700 dark:text-slate-300 [&_a]:font-semibold [&_a]:text-cyan-700 [&_a]:underline [&_a]:decoration-cyan-500/40 [&_a]:underline-offset-4 dark:[&_a]:text-cyan-400 [&_li]:pl-1 [&_strong]:font-bold [&_strong]:text-slate-900 dark:[&_strong]:text-white [&_ul]:ml-5 [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:marker:text-cyan-500">

@@ -156,7 +156,7 @@ export function ContactHero() {
                 </li>
                 {whatsapp && (
                   <li className={channel}>
-                    <span className={`${channelIcon} border-emerald-500/20 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400`}>
+                    <span className={`${channelIcon} border-emerald-500/20 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400`}>
                       <WhatsAppIcon className="h-5 w-5" />
                     </span>
                     <span>

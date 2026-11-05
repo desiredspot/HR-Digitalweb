@@ -175,7 +175,7 @@ export function SocialIncluded() {
                   <div className="space-y-1">
                     <p className="font-mono text-xs text-slate-500 dark:text-slate-400">How often</p>
                     <p className="text-xl font-black text-slate-900 dark:text-white">{c.cadence}</p>
-                    <p className="font-mono text-xs text-emerald-600 dark:text-emerald-400">{c.footer}</p>
+                    <p className="font-mono text-xs text-emerald-700 dark:text-emerald-400">{c.footer}</p>
                   </div>
 
                   <QuoteDialogTrigger className="flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-400 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-lg shadow-cyan-400/20 transition-all hover:brightness-110">

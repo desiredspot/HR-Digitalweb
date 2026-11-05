@@ -77,7 +77,7 @@ export function FaqHero() {
                         className="flex items-center justify-between rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 transition-colors hover:bg-cyan-50 hover:text-cyan-700 dark:text-slate-300 dark:hover:bg-slate-950 dark:hover:text-cyan-300"
                       >
                         {c.title}
-                        <span className="rounded-full bg-slate-100 px-2 py-0.5 font-mono text-[10px] text-slate-500 dark:bg-slate-950 dark:text-slate-400">
+                        <span className="rounded-full bg-slate-100 px-2 py-0.5 font-mono text-[10px] text-slate-600 dark:bg-slate-950 dark:text-slate-400">
                           {c.items.length}
                         </span>
                       </a>

@@ -97,7 +97,7 @@ export function NextjsFaq() {
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-6 text-left focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-cyan-500 sm:p-8 [&::-webkit-details-marker]:hidden">
                 <div className="flex items-center gap-4">
-                  <span className="shrink-0 rounded-2xl border border-slate-200 bg-slate-100 p-3 text-slate-500 transition-colors group-open:border-cyan-500/30 group-open:bg-cyan-500/10 group-open:text-cyan-600 dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-400 dark:group-open:text-cyan-400">
+                  <span className="shrink-0 rounded-2xl border border-slate-200 bg-slate-100 p-3 text-slate-600 transition-colors group-open:border-cyan-500/30 group-open:bg-cyan-500/10 group-open:text-cyan-600 dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-400 dark:group-open:text-cyan-400">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </span>
                   <h3 className="text-base font-bold leading-snug text-slate-900 sm:text-lg dark:text-white">{question}</h3>
@@ -105,7 +105,7 @@ export function NextjsFaq() {
 
                 <span
                   aria-hidden="true"
-                  className="shrink-0 rounded-full border border-slate-200 bg-slate-100 p-2 text-slate-500 transition-transform duration-300 group-open:rotate-180 group-open:border-cyan-500/40 group-open:bg-cyan-500/20 group-open:text-cyan-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400 dark:group-open:text-cyan-400"
+                  className="shrink-0 rounded-full border border-slate-200 bg-slate-100 p-2 text-slate-600 transition-transform duration-300 group-open:rotate-180 group-open:border-cyan-500/40 group-open:bg-cyan-500/20 group-open:text-cyan-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400 dark:group-open:text-cyan-400"
                 >
                   <ChevronDown className="h-4 w-4" />
                 </span>

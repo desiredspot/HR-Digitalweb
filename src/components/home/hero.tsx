@@ -123,7 +123,7 @@ export function Hero() {
                     <span className="block text-xs font-bold leading-tight text-slate-900 transition-colors group-hover:text-cyan-600 dark:text-slate-100 dark:group-hover:text-cyan-400">
                       {label}
                     </span>
-                    <span className="mt-0.5 inline-flex items-center gap-1 text-[10px] font-medium text-emerald-600 dark:text-emerald-400/90">
+                    <span className="mt-0.5 inline-flex items-center gap-1 text-[10px] font-medium text-emerald-700 dark:text-emerald-400/90">
                       <CheckCircle2 className="h-2.5 w-2.5" aria-hidden="true" /> Guaranteed
                     </span>
                   </span>

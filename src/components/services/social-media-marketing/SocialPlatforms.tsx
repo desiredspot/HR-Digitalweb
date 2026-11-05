@@ -210,7 +210,7 @@ export function SocialPlatforms() {
 
               <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-slate-200 pt-6 dark:border-slate-800">
                 <span className="flex items-center gap-1.5 font-mono text-xs text-slate-500 dark:text-slate-400">
-                  <ShieldCheck className="h-4 w-4 text-emerald-600 dark:text-emerald-400" aria-hidden="true" />
+                  <ShieldCheck className="h-4 w-4 text-emerald-700 dark:text-emerald-400" aria-hidden="true" />
                   Copy, design and scheduling
                 </span>
 
