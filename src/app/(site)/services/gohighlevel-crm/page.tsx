@@ -1,5 +1,6 @@
 // src/app/(site)/services/gohighlevel-crm/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { siteConfig } from "@/lib/site-config";
 import { GhlHero } from "@/components/services/gohighlevel-crm/GhlHero";
 import { GhlServices } from "@/components/services/gohighlevel-crm/GhlServices";
@@ -23,8 +24,8 @@ export const metadata: Metadata = {
     "marketing automation services",
   ],
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("gohighlevel-crm")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("gohighlevel-crm").url] },
 };
 
 // Fully static: rendered at build time and served from the CDN.

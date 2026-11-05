@@ -1,5 +1,6 @@
 // src/app/(site)/services/social-media-marketing/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { siteConfig } from "@/lib/site-config";
 import { SocialHero } from "@/components/services/social-media-marketing/SocialHero";
 import { SocialIncluded } from "@/components/services/social-media-marketing/SocialIncluded";
@@ -23,8 +24,8 @@ export const metadata: Metadata = {
     "social media management for small business",
   ],
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("social-media-marketing")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("social-media-marketing").url] },
 };
 
 // Fully static: rendered at build time and served from the CDN.

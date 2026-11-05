@@ -1,5 +1,6 @@
 // src/app/(site)/blog/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight, Newspaper } from "lucide-react";
 import { client } from "@/sanity/client";
@@ -60,8 +61,8 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
     alternates: { canonical },
     // Search results and page 2+ stay out of Google; the posts themselves are still crawled
     robots: isFiltered ? { index: false, follow: true } : undefined,
-    openGraph: { type: "website", url: canonical, title: pageTitle, description, siteName: siteConfig.name },
-    twitter: { card: "summary_large_image", title: pageTitle, description },
+    openGraph: { type: "website", url: canonical, title: pageTitle, description, siteName: siteConfig.name, images: [ogImage("blog")] },
+    twitter: { card: "summary_large_image", title: pageTitle, description, images: [ogImage("blog").url] },
   };
 }
 

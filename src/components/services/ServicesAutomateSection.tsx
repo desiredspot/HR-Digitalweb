@@ -6,8 +6,7 @@ import { sectionBg, sectionDivider } from "@/lib/section-bg";
 // Services page, part 2 of the services list: "Automate".
 // Server component, no client JS. One <h2> for the section, an <h3> per service.
 //
-// IMPORTANT: each `slug` must match the slug of the same service in your site-config
-// `services` list, so the hero pills and footer links (/services#slug) scroll to the card.
+// Each `slug` matches the slug of the same service in src/lib/site-config.ts, so the hero pills and footer links (/services#slug) scroll to the card.
 // `href` is the "learn more" link; remove it from a card to hide that link.
 
 const automateServices: {
@@ -23,7 +22,7 @@ const automateServices: {
   highlights: string[];
 }[] = [
   {
-    slug: "gohighlevel-automation", // TODO: match your site-config slug
+    slug: "gohighlevel-crm",
     title: "GoHighLevel CRM setup",
     badge: "Leads and workflows",
     desc: "Pipelines, booking calendars, funnels and automatic follow-up, set up for how your business actually sells.",
@@ -39,7 +38,7 @@ const automateServices: {
     ],
   },
   {
-    slug: "email-marketing", // TODO: match your site-config slug
+    slug: "email-marketing",
     title: "Email marketing",
     badge: "Nurture and retention",
     desc: "Strategy, copy, design and automation for email sequences and newsletters.",
@@ -118,7 +117,7 @@ export function ServicesAutomateSection() {
                   </span>
                 </div>
 
-                <h3 className="mb-3 text-2xl font-black leading-snug text-slate-900 transition-colors group-hover:text-cyan-600 dark:text-white dark:group-hover:text-cyan-400">
+                <h3 className="mb-3 text-2xl font-black leading-snug text-slate-900 transition-colors group-hover:text-cyan-700 dark:text-white dark:group-hover:text-cyan-400">
                   {title}
                 </h3>
                 <p className="mb-6 text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">{desc}</p>

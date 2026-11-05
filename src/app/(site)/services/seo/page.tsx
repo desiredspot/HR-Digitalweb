@@ -1,5 +1,6 @@
 // src/app/(site)/services/seo/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { siteConfig } from "@/lib/site-config";
 import { SeoHero } from "@/components/services/seo/SeoHero";
 import { SeoServices } from "@/components/services/seo/SeoServices";
@@ -24,8 +25,8 @@ export const metadata: Metadata = {
     "SEO consultant",
   ],
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("seo")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("seo").url] },
 };
 
 // Fully static: rendered at build time and served from the CDN.

@@ -1,5 +1,6 @@
 // src/app/(site)/services/reels-video-editing/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { siteConfig } from "@/lib/site-config";
 import { ReelsHero } from "@/components/services/reels-video-editing/ReelsHero";
 import { ReelsCategories } from "@/components/services/reels-video-editing/ReelsCategories";
@@ -24,8 +25,8 @@ export const metadata: Metadata = {
     "1 minute reels",
   ],
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("reels-video-editing")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("reels-video-editing").url] },
 };
 
 // Fully static: rendered at build time and served from the CDN.

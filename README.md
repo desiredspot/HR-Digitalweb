@@ -36,7 +36,7 @@ npm run build && npm start
 | Service page copy, FAQs, keywords, meta titles | `src/content/services.ts` |
 | Pricing table | `src/app/(site)/pricing/page.tsx` (top of file) |
 | Portfolio projects | `src/content/portfolio.ts` |
-| Logo | `src/components/Logo.tsx` and `src/app/favicon.webp` |
+| Logo | `src/components/Logo.tsx` and `src/app/favicon.io` |
 | Colours and fonts | `src/app/globals.css` (`@theme` block) |
 
 Set `bookingUrl` in `site.ts` to your GoHighLevel calendar link and every "Book a free call" button will open it.

@@ -1,5 +1,6 @@
 // src/app/(site)/process/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { siteConfig } from "@/lib/site-config";
 import { ProcessHero } from "@/components/process/ProcessHero";
 import { ProcessNeeds } from "@/components/process/ProcessNeeds";
@@ -21,8 +22,8 @@ export const metadata: Metadata = {
     "digital marketing process",
   ],
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("process")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("process").url] },
 };
 
 // Fully static: rendered at build time and served from the CDN.

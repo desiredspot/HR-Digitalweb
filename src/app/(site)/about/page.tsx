@@ -1,5 +1,6 @@
 // src/app/(site)/about/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { AboutHero } from "@/components/about/AboutHero";
 import { AboutStorySection } from "@/components/about/AboutStorySection";
 import { AboutValuesSection } from "@/components/about/AboutValuesSection";
@@ -16,8 +17,8 @@ export const metadata: Metadata = {
   title: { absolute: title },
   description,
   alternates: { canonical: "/about" },
-  openGraph: { type: "profile", url: "/about", title, description },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "profile", url: "/about", title, description, images: [ogImage("about")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("about").url] },
 };
 
 export default function AboutPage() {

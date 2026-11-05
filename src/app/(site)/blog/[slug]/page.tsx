@@ -1,5 +1,6 @@
 // src/app/(site)/blog/[slug]/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -76,9 +77,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: p.publishedAt,
       modifiedTime: p._updatedAt,
       authors: [blogAuthor.name],
-      images: img ? [img] : undefined,
+      images: [img ?? ogImage("blog").url],
     },
-    twitter: { card: "summary_large_image", title: t, description: d, images: img ? [img] : undefined },
+    twitter: { card: "summary_large_image", title: t, description: d, images: [img ?? ogImage("blog").url] },
   };
 }
 

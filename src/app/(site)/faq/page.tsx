@@ -1,5 +1,6 @@
 // src/app/(site)/faq/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { siteConfig } from "@/lib/site-config";
 import { allFaqs } from "@/lib/faq";
 import { FaqHero } from "@/components/faq/FaqHero";
@@ -16,8 +17,8 @@ export const metadata: Metadata = {
   description,
   keywords: ["hire a web developer FAQ", "web developer questions", "website project FAQ"],
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("faq")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("faq").url] },
 };
 
 // Fully static: rendered at build time and served from the CDN.

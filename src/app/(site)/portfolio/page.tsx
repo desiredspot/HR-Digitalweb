@@ -1,5 +1,6 @@
 // src/app/(site)/portfolio/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { siteConfig } from "@/lib/site-config";
 import { PortfolioHero } from "@/components/portfolio/PortfolioHero";
 import { PortfolioCaseStudies } from "@/components/portfolio/PortfolioCaseStudies";
@@ -15,8 +16,8 @@ export const metadata: Metadata = {
   description,
   keywords: ["web design portfolio", "landing page examples", "Next.js website examples", "GoHighLevel funnel examples"],
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("portfolio")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("portfolio").url] },
 };
 
 // Fully static: rendered at build time and served from the CDN.

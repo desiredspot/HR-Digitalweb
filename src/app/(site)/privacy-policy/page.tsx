@@ -2,6 +2,7 @@
 // Plain-English privacy policy. Review it against how you actually run the site:
 // if you add analytics, ad pixels, chat widgets or new tools, update sections 2 and 4.
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 import { contactDetails } from "@/lib/contact";
@@ -17,7 +18,8 @@ export const metadata: Metadata = {
   title: { absolute: title },
   description,
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("privacy-policy")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("privacy-policy").url] },
 };
 
 export const dynamic = "force-static";

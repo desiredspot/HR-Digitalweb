@@ -3,6 +3,7 @@
 // sets the exact scope, price, timeline and revisions; these terms cover everything else.
 // Review every section: anything marked as a default below is a choice you can change.
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 import { contactDetails } from "@/lib/contact";
@@ -18,7 +19,8 @@ export const metadata: Metadata = {
   title: { absolute: title },
   description,
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("terms")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("terms").url] },
 };
 
 export const dynamic = "force-static";

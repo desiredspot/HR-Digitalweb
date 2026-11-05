@@ -1,13 +1,12 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, CheckCircle2, Search, Share2, Tag, TrendingUp, Video } from "lucide-react";
+import { ArrowRight, ArrowUpRight, CheckCircle2, FileText, Search, Share2, Tag, TrendingUp, Video } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { sectionBg, sectionDivider } from "@/lib/section-bg";
 
 // Services page, part 3 of the services list: "Attract".
 // Server component, no client JS. One <h2> for the section, an <h3> per service.
 //
-// IMPORTANT: each `slug` must match the slug of the same service in your site-config
-// `services` list, so the hero pills and footer links (/services#slug) scroll to the card.
+// Each `slug` matches the slug of the same service in src/lib/site-config.ts, so the hero pills and footer links (/services#slug) scroll to the card.
 // `href` is the "learn more" link; remove it from a card to hide that link.
 
 const attractServices: {
@@ -23,13 +22,29 @@ const attractServices: {
   highlights: string[];
 }[] = [
   {
-    slug: "seo-content", // TODO: match your site-config slug
+    slug: "seo",
+    title: "SEO services",
+    badge: "Technical and local SEO",
+    desc: "Fix what stops Google ranking your site, then grow visits from local and organic search.",
+    linkText: "More about SEO services",
+    href: "/services/seo",
+    icon: Search,
+    gradient: "from-lime-400 via-emerald-500 to-teal-500",
+    tagColor: "border-lime-500/30 bg-lime-500/10 text-lime-800 dark:text-lime-400",
+    highlights: [
+      "Technical SEO audit and fixes",
+      "Google Business Profile and local SEO",
+      "On-page SEO for your key pages",
+    ],
+  },
+  {
+    slug: "content-marketing",
     title: "SEO content and blogs",
     badge: "Organic search traffic",
     desc: "Researched articles and website copy that rank on Google and turn readers into enquiries.",
     linkText: "More about SEO content",
     href: "/services/content-marketing",
-    icon: Search,
+    icon: FileText,
     gradient: "from-emerald-400 via-teal-500 to-cyan-500",
     tagColor: "border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400",
     highlights: [
@@ -39,7 +54,7 @@ const attractServices: {
     ],
   },
   {
-    slug: "social-media", // TODO: match your site-config slug
+    slug: "social-media-marketing",
     title: "Social media marketing",
     badge: "Brand reach",
     desc: "Consistent, on-brand posts and carousels that keep you in front of your audience.",
@@ -55,7 +70,7 @@ const attractServices: {
     ],
   },
   {
-    slug: "reels-video", // TODO: match your site-config slug
+    slug: "reels-video-editing",
     title: "Reels and short-form video",
     badge: "Scroll-stopping hooks",
     desc: "One-minute reels and shorts built to stop the scroll and send viewers to your website.",
@@ -98,7 +113,7 @@ export function ServicesAttractSection() {
             id="attract-heading"
             className="mb-6 text-balance text-3xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl dark:text-white"
           >
-            Content, social{" "}
+            SEO, content, social{" "}
             <span className="bg-gradient-to-r from-cyan-500 via-teal-400 to-blue-600 bg-clip-text text-transparent underline decoration-cyan-500/30 underline-offset-8 dark:from-cyan-400 dark:via-teal-300 dark:to-blue-500">
               and video
             </span>
@@ -110,7 +125,7 @@ export function ServicesAttractSection() {
           </p>
         </header>
 
-        <ul className="mb-16 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <ul className="mx-auto mb-16 grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
           {attractServices.map(({ slug, title, badge, desc, linkText, href, icon: Icon, gradient, tagColor, highlights }) => (
             <li
               key={slug}
@@ -134,7 +149,7 @@ export function ServicesAttractSection() {
                   </span>
                 </div>
 
-                <h3 className="mb-3 text-xl font-black leading-snug text-slate-900 transition-colors group-hover:text-cyan-600 dark:text-white dark:group-hover:text-cyan-400">
+                <h3 className="mb-3 text-xl font-black leading-snug text-slate-900 transition-colors group-hover:text-cyan-700 dark:text-white dark:group-hover:text-cyan-400">
                   {title}
                 </h3>
                 <p className="mb-6 text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">{desc}</p>
@@ -187,7 +202,7 @@ export function ServicesAttractSection() {
               Want content and reels that bring ready-to-buy visitors to your website?
             </h3>
             <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
-              I combine SEO articles, social carousels and edited reels into one monthly growth plan.
+              I combine SEO, blog articles, social carousels and edited reels into one monthly growth plan.
             </p>
           </div>
 

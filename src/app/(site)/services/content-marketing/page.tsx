@@ -1,5 +1,6 @@
 // src/app/(site)/services/content-marketing/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { siteConfig } from "@/lib/site-config";
 import { ContentHero } from "@/components/services/content-marketing/ContentHero";
 import { ContentTypes } from "@/components/services/content-marketing/ContentTypes";
@@ -22,8 +23,8 @@ export const metadata: Metadata = {
     "content marketing services",
   ],
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("content-marketing")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("content-marketing").url] },
 };
 
 // Fully static: rendered at build time and served from the CDN.

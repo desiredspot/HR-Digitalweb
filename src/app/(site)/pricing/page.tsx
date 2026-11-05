@@ -1,5 +1,6 @@
 // src/app/(site)/pricing/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { serviceHref, siteConfig } from "@/lib/site-config";
 import { priceToNumber, pricingRows, pricingTiers, tierLabels } from "@/lib/pricing";
 import { PricingHero } from "@/components/pricing/PricingHero";
@@ -24,8 +25,8 @@ export const metadata: Metadata = {
     "social media management packages",
   ],
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("pricing")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("pricing").url] },
 };
 
 // Fully static: rendered at build time and served from the CDN.

@@ -1,5 +1,6 @@
 // src/app/(site)/services/web-development/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { siteConfig } from "@/lib/site-config";
 import { NextjsHero } from "@/components/services/web-development/NextjsHero";
 import { NextjsBuildTypes } from "@/components/services/web-development/NextjsBuildTypes";
@@ -17,8 +18,8 @@ export const metadata: Metadata = {
   title: { absolute: title },
   description,
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("web-development")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("web-development").url] },
 };
 
 // Fully static: rendered at build time and served from the CDN.

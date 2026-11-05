@@ -6,8 +6,7 @@ import { sectionBg, sectionDivider } from "@/lib/section-bg";
 // Services page, part 1 of the services list: "Build".
 // Server component, no client JS. One <h2> for the section, an <h3> per service.
 //
-// IMPORTANT: each `slug` must match the slug of the same service in your site-config
-// `services` list. The hero's "Jump to a service" pills and the footer link to
+// Each `slug` matches the slug of the same service in src/lib/site-config.ts. The hero's "Jump to a service" pills and the footer link to
 // /services#<slug>, and this card's id is that slug, so the link scrolls right to it.
 //
 // `href` is the "learn more" link. Point it at a dedicated service page if you have one
@@ -26,7 +25,7 @@ const buildServices: {
   highlights: string[];
 }[] = [
   {
-    slug: "web-development", // TODO: match your site-config slug
+    slug: "web-development",
     title: "Next.js web development",
     badge: "Fast custom builds",
     desc: "Fast custom websites and web apps with clean, SEO-friendly code.",
@@ -42,7 +41,7 @@ const buildServices: {
     ],
   },
   {
-    slug: "landing-pages", // TODO: match your site-config slug
+    slug: "landing-page-design",
     title: "Unbounce landing pages",
     badge: "Built to convert",
     desc: "Campaign pages designed for one goal: turning ad clicks into leads.",
@@ -54,7 +53,7 @@ const buildServices: {
     highlights: ["Direct-response headlines and layout", "Ready for A/B testing", "Matched to your Meta and Google ads"],
   },
   {
-    slug: "wordpress", // TODO: match your site-config slug
+    slug: "wordpress-development",
     title: "WordPress websites",
     badge: "Easy to manage",
     desc: "Flexible sites your team can update without needing a developer.",
@@ -128,7 +127,7 @@ export function ServicesBuildSection() {
                   </span>
                 </div>
 
-                <h3 className="mb-3 text-xl font-black leading-snug text-slate-900 transition-colors group-hover:text-cyan-600 dark:text-white dark:group-hover:text-cyan-400">
+                <h3 className="mb-3 text-xl font-black leading-snug text-slate-900 transition-colors group-hover:text-cyan-700 dark:text-white dark:group-hover:text-cyan-400">
                   {title}
                 </h3>
                 <p className="mb-6 text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">{desc}</p>
@@ -181,7 +180,7 @@ export function ServicesBuildSection() {
               Next.js, WordPress or Unbounce: which one is right for you?
             </h3>
             <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
-              Book a free 15-minute call and I&apos;ll help you pick the right option for your goals and budget.
+              Book a free 30-minute call and I&apos;ll help you pick the right option for your goals and budget.
             </p>
           </div>
 

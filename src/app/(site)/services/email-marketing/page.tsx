@@ -1,5 +1,6 @@
 // src/app/(site)/services/email-marketing/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { siteConfig } from "@/lib/site-config";
 import { EmailHero } from "@/components/services/email-marketing/EmailHero";
 import { EmailServices } from "@/components/services/email-marketing/EmailServices";
@@ -24,8 +25,8 @@ export const metadata: Metadata = {
     "Klaviyo setup",
   ],
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("email-marketing")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("email-marketing").url] },
 };
 
 // Fully static: rendered at build time and served from the CDN.

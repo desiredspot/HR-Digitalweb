@@ -1,5 +1,6 @@
 // src/app/(site)/contact/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { siteConfig } from "@/lib/site-config";
 import { contactDetails } from "@/lib/contact";
 import { ContactHero } from "@/components/contact/ContactHero";
@@ -14,8 +15,8 @@ export const metadata: Metadata = {
   description,
   keywords: ["hire a web developer", "contact web developer", "freelance web developer India", "website quote"],
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("contact")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("contact").url] },
 };
 
 export const dynamic = "force-static";

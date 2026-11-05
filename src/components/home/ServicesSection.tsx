@@ -157,7 +157,7 @@ const services: {
     category: "marketing",
     desc: "On-brand posts, carousels and monthly content calendars.",
     linkText: "Explore social media marketing",
-    href: "/services/social-media",
+    href: "/services/social-media-marketing",
     icon: Share2,
     badge: "Brand awareness",
     gradient: "from-cyan-400 to-teal-400",

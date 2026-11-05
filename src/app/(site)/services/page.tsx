@@ -1,5 +1,6 @@
 // src/app/(site)/services/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { ServicesHero } from "@/components/services/ServicesHero";
 import { ServicesBuildSection } from "@/components/services/ServicesBuildSection";
 import { ServicesAutomateSection } from "@/components/services/ServicesAutomateSection";
@@ -14,8 +15,8 @@ export const metadata: Metadata = {
   title: { absolute: title },
   description,
   alternates: { canonical: "/services" },
-  openGraph: { type: "website", url: "/services", title, description },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", url: "/services", title, description, images: [ogImage("services")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("services").url] },
 };
 
 export default function ServicesPage() {

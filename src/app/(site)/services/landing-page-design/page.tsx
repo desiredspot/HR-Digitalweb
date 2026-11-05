@@ -1,5 +1,6 @@
 // src/app/(site)/services/landing-page-design/page.tsx
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 import { siteConfig } from "@/lib/site-config";
 import { LandingPageHero } from "@/components/services/landing-page-design/LandingPageHero";
 import { LandingPageTypes } from "@/components/services/landing-page-design/LandingPageTypes";
@@ -17,8 +18,8 @@ export const metadata: Metadata = {
   title: { absolute: title },
   description,
   alternates: { canonical: path },
-  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", url: path, title, description, siteName: siteConfig.name, images: [ogImage("landing-page-design")] },
+  twitter: { card: "summary_large_image", title, description, images: [ogImage("landing-page-design").url] },
 };
 
 // Fully static: rendered at build time and served from the CDN.
