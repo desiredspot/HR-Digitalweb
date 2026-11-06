@@ -26,16 +26,20 @@ type PostEntry = { slug: string; publishedAt?: string; _updatedAt?: string };
 
 async function getPosts(): Promise<PostEntry[]> {
   try {
-    return await client.fetch<PostEntry[]>(
-      `*[_type=="post" && defined(slug.current)]{ "slug": slug.current, publishedAt, _updatedAt }`,
-    );
+    // Give up after 8 seconds and don't retry, so a slow connection never stalls the build
+    return await client
+      .withConfig({ maxRetries: 0 })
+      .fetch<PostEntry[]>(
+        `*[_type=="post" && defined(slug.current)]{ "slug": slug.current, publishedAt, _updatedAt }`,
+        {},
+        { signal: AbortSignal.timeout(8000) },
+      );
   } catch (err) {
     // If Sanity is unreachable during a build, the sitemap still works without the posts
-    console.error("Sitemap: could not load blog posts from Sanity:", err);
+    console.error("Sitemap: could not load blog posts from Sanity:", err instanceof Error ? err.message : err);
     return [];
   }
 }
-
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = siteConfig.url.replace(/\/$/, "");
   const now = new Date();

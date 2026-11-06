@@ -14,7 +14,7 @@ import { sectionBg, sectionDivider } from "@/lib/section-bg";
 
 // TODO: keep only numbers you can back up with real client results
 const stats = [
-  { value: "99+", label: "PageSpeed score" },
+  { value: "90+", label: "PageSpeed score" },
   { value: "3.5x", label: "Avg. lead increase" },
   { value: "< 5 min", label: "Automated follow-up" },
   { value: "100%", label: "Done-for-you funnel" },
